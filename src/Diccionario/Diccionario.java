@@ -4,12 +4,12 @@ package Diccionario;
 import java.util.HashMap;
 import java.util.List;
 
-public class Dic<K,E> 
+public class Diccionario<K,E> 
 {
     private HashMap<K, E> DiccionarioHash;
     private List<HashMap> DiccionarioList;
 
-    public Dic(HashMap<K, E> DiccionarioHash, List<HashMap> DicccionarioList) {
+    public Diccionario(HashMap<K, E> DiccionarioHash, List<HashMap> DicccionarioList) {
         this.DiccionarioHash = DiccionarioHash;
         this.DiccionarioList = DicccionarioList;
     }
