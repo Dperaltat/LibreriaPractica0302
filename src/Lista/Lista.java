@@ -29,5 +29,10 @@ public class Lista<E> {
     public boolean eliminarElemento(int id) {
         return this.elementoList.remove(this.getElementoList().get(id));
     }
+
+    @Override
+    public String toString() {
+        return "Lista{" + "elementoList=" + elementoList + '}';
+    }
     
 }
