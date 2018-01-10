@@ -1,6 +1,7 @@
 
 package Diccionario;
 
+import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 
@@ -37,10 +38,11 @@ public class Diccionario<K,E>
         return this.DiccionarioHash.get(clave);
     }
     
-    /*public List<E> recuperarElementos()
+    public List <E> recuperarElementos()
     {
-        return this.DiccionarioList.add(0, DiccionarioHash);
-    }*/
+        List<E> lista = (List<E>) new ArrayList<E>((List<E>) DiccionarioHash.values());
+        return  lista;
+    } 
     
     public boolean eliminarElemento(K clave)
     {
