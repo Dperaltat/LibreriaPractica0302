@@ -48,4 +48,10 @@ public class Diccionario<K,E>
     {
         return this.DiccionarioList.remove(this.DiccionarioHash);
     }
+
+    @Override
+    public String toString() {
+        return "Diccionario{" + "DiccionarioHash=" + DiccionarioHash + ", DiccionarioList=" + DiccionarioList + '}';
+    }
+    
 }
