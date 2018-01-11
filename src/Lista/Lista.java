@@ -33,7 +33,7 @@ public class Lista<E> {
 
     @Override
     public String toString() {
-        return "Lista{" + "elementoList=" + elementoList + '}';
+        return elementoList + " | ";
     }
     
 }
